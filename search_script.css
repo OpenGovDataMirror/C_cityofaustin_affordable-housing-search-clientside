@@ -1,0 +1,449 @@
+@import "style_variables.css";
+
+#search-direct {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin-top: 0px;
+    font-weight: 500;
+    float: right;
+    color: orange;
+}
+
+#search-container {
+    background-color: white;
+    position: relative;
+    float: left;
+    z-index: 110;
+}
+
+@media only screen and (max-width: 812px) {
+  #search-container  {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+#search-direct a:link, #search-direct a:visited {
+    background-color: orange;
+    padding: 1px 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#search-direct a:hover, #search-direct a:active {
+    background-color: red;
+}
+
+
+.top-header-title {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 0px;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2;
+}
+
+.top-header {
+    background-color: var(--coa-color-primary--blue);
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 60px;
+    margin-top: 0px;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.select-lang, .select-voucher {
+    background-color: white;
+    color: black;
+    width: 120;
+    height: 33px;
+    font-size: 15;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: 1px solid #0066cc;
+    background-color: #0099cc;
+    color: #ffffff;
+}
+
+button:hover {
+    border: 1px solid #0099cc;
+    background-color: #00aacc;
+    color: #ffffff;
+}
+
+button:disabled, button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.done-btn {
+    width: auto;
+    height: 30px;
+    background-color: var(--coa-color-primary--blue);
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.skip-link {
+    background-color: white;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    color: #2196F3;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.skip-link:link {
+    padding: 1px 14px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.skip-link:hover{
+    color: #14395a;
+    text-decoration: none;
+}
+
+#options-wizard {
+    /*display: none;*/
+}
+
+.options-wizard-question-text {
+    font-size: 14px;
+    font-weight: 700;
+    /*width: 250px;*/
+    text-align: center;
+}
+
+input[type=number] {
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid silver;
+}
+
+input[type=number]:focus {
+    border: 3px solid var(--coa-color-primary--blue);
+  }
+
+#map-legend-banner {
+    position: absolute;
+    z-index: 100;
+    background-color: var(--coa-color-primary--blue);
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 2px;
+    bottom: 0px;
+    right: 50px;
+}
+
+#property-info {
+    z-index: 1000;
+    background-color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    bottom: 0px;
+    position: absolute;
+    /*height: 20%;*/
+    height: 0%;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+    width: 100%;
+    color: black;
+    display: none;
+    font-size: 40px;
+    /*overflow: auto;*/
+    overflow-y: auto;
+}
+
+#show-more {
+    width: 130px;
+    color: #5cb85c;
+    border: 1px solid #5cb85c;
+    border-radius: 9px;
+    background-color: white;
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    letter-spacing: 2;
+    font-weight: 500;
+    height: 40px;
+}
+
+#cancel-btn, #cancel-map-legend {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #cc3d3d;
+    border-color: white;
+    border: 1px solid #cc3d3d;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 9px;
+    float: right;
+    font-weight: 500;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+#hide-bottom-footer {
+    width: 30px;
+    height: 30px;
+    background-color: #14395a;
+    color: white;
+    border-color: white;
+    border:1px solid white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 9px;
+    float: left;
+    font-weight: 500;
+    margin-right: 0;
+    margin-left: 20px;
+    padding: 0px;
+}
+
+#property-details {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+}
+
+.property-details-header {
+    margin-top: 15px;
+    color: black;
+    text-decoration: underline;
+    font-weight: 400;
+    width: 480px;
+    font-size: 15px;
+}
+
+.property-details-group {
+    display: none;
+    margin-left: 20px;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+.img-sort {
+    width: 15px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+
+.img-sort-down {
+    display: none;
+}
+
+.waitlist-flag {
+    margin-top: 7px;
+    font-size: 15px;
+    color: white;
+    border: 1px solid black;
+    width: 180;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    margin: 20px;
+}
+
+.shift-icon {
+    margin-left: 12px;
+    margin-top: 10px;
+    transform: rotate(136deg);
+}
+
+
+.tear {
+    width: 30px;
+    height: 30px;
+    border-radius: 0 50% 50% 50%;
+    /*border: 3px solid black;*/
+    transform: rotate(225deg);
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#legend-container {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    background-color: var(--coa-color-primary--blue) !important;
+    border-top: 1px solid white;
+    border: 1px solid transparent;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.8;
+
+}
+
+.bottom-footer {
+    background-color: #14395a;
+    z-index: 10000;
+    top: 60px;
+    position: absolute;
+    height: 900px;
+    margin-bottom: 0px;
+    /*box-shadow: 3px 14px 0 rgba(0,0,0,0.4);*/
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    opacity: 0.;
+    padding: 5px;
+    overflow: auto;
+    float: auto;
+}
+
+.bottom-footer-text {
+    text-align: left;
+    padding-top: 21px;
+    margin: 0 15px;
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    /*letter-spacing: 5;*/
+    letter-spacing: 2;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    background-color: var(--coa-color-primary--blue);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid white;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.close:hover, .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* checkbox related */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    outline: 1px solid var(--coa-color-primary--blue);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
